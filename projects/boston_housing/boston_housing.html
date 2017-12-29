@@ -11972,9 +11972,9 @@ Standard deviation of prices: $165,171.13
 <p><strong>Answer:</strong></p>
 <p>I expect <code>'MEDV'</code> value to be higher for:</p>
 <ul>
-<li>Higher <code>'RM'</code> values;</li>
-<li>Lower <code>'LSTAT'</code> values;</li>
-<li>Lower <code>'PTRATIO'</code> values.</li>
+<li>Higher <code>'RM'</code> values, because more rooms generally mean bigger house;</li>
+<li>Lower <code>'LSTAT'</code> values, because if a lot of lower class families can afford housing in the neighborhood, it must have a lot of cheaper houses;</li>
+<li>Lower <code>'PTRATIO'</code> values, because lower students-to-teachers ratio suggests more/better schools.</li>
 </ul>
 
 </div>
@@ -12124,9 +12124,7 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
-<p>It depends. Predicting 92% of the variance sounds very good, but there's no context. In some models 99% migh not be good enough, in some 40% could be sufficient.
-In the context of real estate I would consider 92% to be sufficient. <a href="http://www.corporate-engagement.com/files/file/KKB_AVM_NK063017.pdf">A recent article</a> on machine learning in real estate reported R^2 values in range of 0.58 to 0.92 for a number of different machine learning models.</p>
+<p><strong>Answer:</strong> I would consider this model to have successfully captured the variation of the target variable. Without context, if the R^2 score is greater than 0.8, then the model successfully captures the variation of the target variable. In some contexts model with R^2 score of 0.923 might be not good enough though.</p>
 
 </div>
 </div>
